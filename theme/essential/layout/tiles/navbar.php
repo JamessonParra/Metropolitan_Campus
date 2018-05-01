@@ -61,12 +61,11 @@ defined('MOODLE_INTERNAL') || die;
                     </div>
                         <div id='essentialmenus' class="nav-collapse collapse pull-left">
                             <?php
+                            //echo $OUTPUT->custom_menu_language();
                             echo $OUTPUT->custom_menu_courses();
                             if ($colourswitcher) {
                                 echo $OUTPUT->custom_menu_themecolours();
-                            }?>
-                            <div id="custom_menu" class="custom_menu"><ul class="nav" id="yui_3_17_2_1_1525108864401_692"><li class="dropdown" id="yui_3_17_2_1_1525108864401_691"><a href="#" class="dropdown-toggle" data-toggle="dropdown" title="Curso Introductorio" id="yui_3_17_2_1_1525108864401_690">Curso Introductorio<span aria-hidden="true" class="fa fa-caret-right"></span></a><div class="dropdown-menu"><ul><li><a title="Moodle para Estudiantes" href="https://worldcampus.metrouni.us/course/view.php?id=192">Moodle para Estudiantes</a></li><li><a title="Orientación a Estudiantes" href="https://worldcampus.metrouni.us/course/view.php?id=92">Orientación a Estudiantes</a></li></ul></div></li><li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" title="Servicios estudiantiles">Servicios estudiantiles<span aria-hidden="true" class="fa fa-caret-right"></span></a><div class="dropdown-menu"><ul><li><a title="My MIU" href="http://www.myportal.metrouni.us/" target="_blank">My MIU</a></li><li><a title="Soporte en línea" href="http://www.support.metrouni.us/" target="_blank">Soporte en línea</a></li><li><a title="Biblioteca Virtual" href="#">Biblioteca Virtual</a></li><li><a title="Tutoriales" href="#">Tutoriales</a></li></ul></div></li><li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" title="Calendario Académico">Calendario Académico<span aria-hidden="true" class="fa fa-caret-right"></span></a><div class="dropdown-menu"><ul><li><a title="Track A" href="http://metrouni.us/pdf/Calendario2018-2019A.pdf" target="_blank">Track A</a></li><li><a title="Track B" href="http://metrouni.us/pdf/Calendario2018-2019B.pdf" target="_blank">Track B</a></li></ul></div></li></ul></div>
-                            <?php
+                            }
                             echo $OUTPUT->custom_menu();
                             echo $OUTPUT->custom_menu_activitystream();
                             ?>
